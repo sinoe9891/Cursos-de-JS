@@ -1,12 +1,12 @@
-var global = 100;
+function ver() {
+	var edad = document.getElementById("edad");
 
-function uno() {
-	var local_uno = 1;
-	alert("Global " + global + " Local " + local_uno);
-	dos();
-}
-
-function dos() {
-	var local_dos = 2;
-	alert("Global " + global + " Local " + local_dos);
+	if (edad.value <= 18)
+		alert("Abono Joven");
+	else {
+		if (edad.value >= 65)
+			alert("Abono 3ª Edad");
+		else
+			alert("Abono normal");
+	}
 }
